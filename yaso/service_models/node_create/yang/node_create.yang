@@ -1,0 +1,4 @@
+module node_create {
+    namespace "http://example.com/node_create";
+    prefix node_create;
+}

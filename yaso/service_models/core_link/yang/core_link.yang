@@ -1,0 +1,4 @@
+module core_link {
+    namespace "http://example.com/core_link";
+    prefix core_link;
+}

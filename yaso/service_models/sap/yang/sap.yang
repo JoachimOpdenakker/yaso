@@ -1,0 +1,4 @@
+module sap {
+    namespace "http://example.com/sap";
+    prefix sap;
+}

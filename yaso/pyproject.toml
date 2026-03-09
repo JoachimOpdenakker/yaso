@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=65.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yaos"
+version = "0.1.0"
+description = "YASO: yet another service orchestrator using YANG and NETCONF"
+authors = [
+    { name="Joachim Opdenakker", email="joachim@opdenakker.email" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.dependencies]
+fastapi = "^0.104.0"
+uvicorn = { extras = ["standard"], version = "^0.24.0" }
+pydantic = "^2.7.0"
+jinja2 = "^3.1.4"
+typer = "^0.10.0"
+requests = "^2.32.0"
+sysrepo = { version="*", python=">=3.10" }  # Python bindings for Sysrepo
+ncclient = "^0.6.16"
+
+[tool.setuptools.packages.find]
+where = ["yaso"]

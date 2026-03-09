@@ -1,0 +1,4 @@
+module device {
+    namespace "http://example.com/device";
+    prefix device;
+}

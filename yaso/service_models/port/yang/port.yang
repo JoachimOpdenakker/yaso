@@ -1,0 +1,4 @@
+module port {
+    namespace "http://example.com/port";
+    prefix port;
+}
